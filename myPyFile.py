@@ -1,4 +1,7 @@
-location = __file__
+from pathlib import Path
 
-with open(location, 'r') as f:
-    print(f.read())
+myFile = Path(__file__)
+
+dirName = myFile.parent.resolve()
+
+print(dirName)
