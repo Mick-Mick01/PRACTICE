@@ -1,7 +1,7 @@
-from pathlib import Path
+import os
 
-myFile = Path(__file__)
+list_of_all = os.system("dir ")
+list_of_all_2 = os.system("dir /a")
 
-dirName = myFile.parent.resolve()
-
-print(dirName)
+print(list_of_all)
+print(list_of_all_2)
