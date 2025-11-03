@@ -1,2 +1,4 @@
-with open(__file__, 'r') as f:
-    print(f)
+location = __file__
+
+with open(location, 'r') as f:
+    print(f.read())
